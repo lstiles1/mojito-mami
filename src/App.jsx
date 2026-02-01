@@ -1,4 +1,5 @@
 import { lazy, Suspense } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import gsap from 'gsap';
 import { ScrollTrigger, SplitText } from 'gsap/all';
 
@@ -35,6 +36,7 @@ const App = () => {
       <Suspense fallback={<SectionFallback />}>
         <Contact />
       </Suspense>
+      <Analytics />
     </main>
   );
 };
